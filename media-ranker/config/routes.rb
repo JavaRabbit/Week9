@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   get "/books", to: "books#index"
 
+  #this link (in the header) will redirect to the home page
+  get "/", to: "welcome#index"
+
   root "welcome#index"
 
 

@@ -1,0 +1,5 @@
+<% @albums.collect do |album| %>
+  <%= link_to "#{ album.name}", '#' %>
+  <br><br>
+  <%= album.description %>
+<% end %>
