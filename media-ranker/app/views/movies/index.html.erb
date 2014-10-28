@@ -1,0 +1,8 @@
+<!--here is the movies page -->
+
+
+<% @movies.collect do |movie| %>
+  <%= link_to "#{ movie.name}", '#' %>
+  <br><br>
+  <%= movie.description %>
+<% end %>

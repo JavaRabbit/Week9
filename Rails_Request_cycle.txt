@@ -1,0 +1,19 @@
+Gem:
+
+Production vs Development vs Test: you can specify how errors to users vs production
+and development stage.
+
+eg. group :test:, :development do
+better_errors gem
+
+Put this gem in :development
+
+Heroku runs things in production mode.
+
+
+Getting started with Media ranker ******************************
+
+
+bonnies-air:Week_9 bonniekwong$ rails new media-ranker -T -d postgresql
+
+remove turbo-links (4 places  gem file, application.js, application.html.erb, a)
