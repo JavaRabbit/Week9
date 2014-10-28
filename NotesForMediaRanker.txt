@@ -1,0 +1,30 @@
+Notes on Media-Ranker
+
+Setting up the database:
+rails generate model Movie name:string description:text rank:integer
+rails generate model Book name:string description:text written_by:string rank:integer
+
+Oops, forgot to add the directed_by column to movies:
+rails generate migration add_director_to_movies directed_by:string
+rake db:migrate
+
+Set up the movies controller in terminal:
+touch app/controllers/movies_controller.rb
+touch app/controllers/books_controller
+
+Create a views and index page for Books:
+mkdir app/views/books
+touch app/views/books/index.html.erb
+
+
+Raise and Errors
+in a def, add ' raise "error message goes here" '
+
+
+PUtting things into the database:
+Movie.create(name: "2000 Leagues Under the Sea")
+
+
+Generate a controller for the welcome page:
+rails generate controller welcome index
+

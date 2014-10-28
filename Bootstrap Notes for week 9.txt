@@ -1,0 +1,6 @@
+NOtes for week 9
+
+Boot strap, we downloaded bootstrap
+from http://getbootstrap.com/getting-started/#download
+
+we copied the bootstrap.min.css file into our media ranker /app/assets/stylesheets

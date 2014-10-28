@@ -1,7 +1,7 @@
 <!-- JHello Books -->
 
 <% @books.collect do |book| %>
-  <%= link_to "#{ book.name}", '#' %>
+  <%= link_to "#{book.name}", '#' %>
   <br>
   <%= book.description %><br><br>
 <% end %>

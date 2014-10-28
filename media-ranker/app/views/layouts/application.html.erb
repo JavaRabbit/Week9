@@ -5,32 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--from bootstrap -->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1"> from bootstrap -->
 </head>
 <body>
 
 <h2>Media-Ranker</h2><h3>Ranking the Best of Everything</h3
 
-<div class = "container">
+  <div>
+
+
   <%= yield %>
-
-
-  <div class = "row">
-    <div class = "sidebar col-lg-5">
-      sidebar stuff
-    </div>
-    
-    <div class = "main col-lg-12">
-      more stuff
-
-    </div>
-    stuff
   </div>
-</div>
-
-
-
-
-
 </body>
 </html>

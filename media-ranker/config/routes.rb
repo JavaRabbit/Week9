@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #routes for movies
 
   #this means when /movies is requested, use movies controller, index method
-  get "/movies", to: "movies#index", as: :update_cart
+  get "/movies", to: "movies#index"
 
   get "/books", to: "books#index"
 
