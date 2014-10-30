@@ -1,0 +1,25 @@
+State Quiz
+
+self
+set_current_user
+set_post
+index (method)
+@post
+session
+
+
+private - can only be called from other instance methods. Can't be directly
+be called from the console
+
+
+Routing 102 - Lecture
+in routes.rb, go from more specific to less specific top to bottom
+
+HTTP:
+laptop > sends message to router, which is connected to modem, which is "wired" to Comcast
+Comcast send it to DNS server (database of addresses)
+
+
+DNS - eg. has IP column, Host column (eg. host google, IP address 1234)
+After DNS, contacts server, uses technology called TCP IP
+sends things in packets

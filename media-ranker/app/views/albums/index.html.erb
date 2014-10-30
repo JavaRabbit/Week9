@@ -1,5 +1,7 @@
+<!-- view > albums > index.html.erb  -->
+
 <% @albums.collect do |album| %>
   <%= link_to "#{ album.name}", '#' %>
-  <br><br>
-  <%= album.description %>
+  <br>
+  <%= album.description %><br><br>
 <% end %>

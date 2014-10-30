@@ -5,12 +5,18 @@ Rails.application.routes.draw do
   #routes for movies
 
   #this means when /movies is requested, use movies controller, index method
-  get "/movies", to: "movies#index"
+  get "/movies",    to: "movies#index", as: :movies
 
-  get "/books", to: "books#index"
+  get "/movies/:id",       to: "movies#show", as: :movie
 
-  #this link (in the header) will redirect to the home page
-  get "/", to: "welcome#index"
+
+  get "/books",    to: "books#index",   as: "books"
+
+  get "/albums",    to: "albums#index", as: "albums"
+
+  #this link (in the header bar of the page) will redirect to the home page
+  #note how this is used in application.html.erb
+  get "/", to: "welcome#index", as: "home"
 
   root "welcome#index"
 

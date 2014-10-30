@@ -10,7 +10,7 @@
 class Parser
 
 
-def parse
+  def parse
 
   # this reads in the file
   puts "reading the file"
@@ -20,9 +20,14 @@ def parse
   puts theFile.class
   puts theFile.length
 
+  "tim bought ten timth cookies".scan("tim").length
+  #countSubstrings("theFile", "Started")
+
+  end
 
 
-
-end
+  def countSubstrings str, subStr
+    return str.scan(subStr).length
+  end
 
 end

@@ -1,13 +1,54 @@
+<!--  views > welcome > index.html.erb -->
+
 <div class = "welcome_column">
   <h2>Top Movies! </h2>
+
+  <div>
+    <!-- note how we limit it to the first 5 movies, look at welcome_controller -->
+    <% @movies.collect do |movie| %>
+      <%= link_to "#{ movie.name}", "#" %>
+      <!-- <%= link_to 'Media-Ranker', home_path %> -->
+      <br>
+      Rank: <%= movie.rank %>
+      <br>
+    <% end %>
+  </div>
+
+  <!-- add a link to more movies -->
+  <%= link_to 'View More Movies', movies_path %>
 </div>
 
 
 <div class = "welcome_column">
   <h2>Top Books! </h2>
+  <div>
+    <!-- we limit to the first 5 books, look at welcome_controller -->
+    <% @books.collect do |book| %>
+      <%= link_to "#{ book.name}", '#' %>
+      <br>
+      Rank: <%= book.rank %>
+      <br>
+    <% end %>
+  </div>
+
+  <!-- add a link to more books -->
+  <%= link_to 'View More Books', books_path %>
+
 </div>
+
 
 
 <div class = "welcome_column">
   <h2>Top Albums! </h2>
+  <div>
+    <!-- we limit to the first 5 albums, look at welcome_controller -->
+    <% @albums.collect do |album| %>
+      <%= link_to "#{ album.name}", '#' %>
+      <br>
+      Rank: <%= album.rank %>
+      <br>
+    <% end %>
+  </div>
+  <%= link_to 'View More Albums', albums_path %>
+
 </div>

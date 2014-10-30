@@ -2,7 +2,18 @@
 
 
 <% @movies.collect do |movie| %>
-  <%= link_to "#{ movie.name}", '#' %>
-  <br><br>
-  <%= movie.description %>
+
+  <!-- This works too -->
+  <!-- <%= link_to "#{movie.name}", movie_path(movie.id)  %> -->
+
+  <%= link_to "#{movie.name}", movie %>
+
+
+
+
+
+  <br>
+  Rank: <%= movie.rank %>
+  <br>
+  <%= movie.description %><br><br>
 <% end %>
